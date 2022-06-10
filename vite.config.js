@@ -10,8 +10,7 @@ module.exports = defineConfig({
         detail: resolve(__dirname, 'detail.html'),
         products: resolve(__dirname, 'products.html'),
         signin: resolve(__dirname, 'Signin.html'),
-        signup: resolve(__dirname, 'Signup.html'),
-        nested: resolve(__dirname, 'nested/index.html')
+        signup: resolve(__dirname, 'Signup.html')
       }
     }
   }

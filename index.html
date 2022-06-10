@@ -6,138 +6,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-       <!-- ôm -->
-<div class="font-inter ">
-    <!-- 1 -->
-<div class="flex md:flex max-w-7xl mx-auto mt-10 md:justify-between md:items-center">
-    <div>
-        <h1 class="flex font-bold text-2xl">Fudop <p class="text-[#F54748]">.</p> </h1>
-    </div>
-    <div class="text-lg">
-        <a class="pr-4 text-red-500" href="">Home</a>
-        <a class="pr-4" href="">Products</a>
-        <a class="pr-4" href="">About Us</a>
-        <a class="pr-4" href="">Contact Us</a>
-    </div>
-    <div  class="flex">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-2 mt-2"
-                 fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" 
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184
-                 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-        <button class="border-2 border-[#F54748] rounded-md mr-4">
-           <p class="text-sm font-inter rounded-2xl text-[#F54748] p-2 px-4"> Sign In</p>
-        </button>
-        <button class="text-sm font-inter text-white rounded-md bg-[#F54748] p-2 px-4">Sign Up</button>
-    </div>
-    
-</div>
-<!-- 2 -->
-<div class="grid grid-cols-1 mt-20 md:max-w-7xl md:mx-auto md:grid md:grid-cols-2 gap-10">
-    <div class="mt-20">
-        <p class="text-[#F54748] font-bold text-lg bg-[#FFEEEE] w-32 text-center w-40 h-11 leading-10 rounded-md">Quality Food</p>
-        <h1 class="font-bold text-7xl space-x mt-8">
-        Fastest <br> <j class="text-[#F54748]">Delivery</j> & <br> Easy <j class="text-[#F54748]">Pickup</j>
-        </h1>
-        <p class="mt-8 text-[#5D5D5D]">Best cooks and best delivery guys all at your service. Hot tasty food will <br> reach you in 60 minutes.</p>
-        <form action="" class=" rounded-md  max-w-md mt-4 flex justify-between border border-none">
-            <input class="rounded-l-md outline-none  border w-full border-[#F54748] p-3 " type="text" placeholder="Enter your delivery location" required>
-            <button class="bg-[#F54748] w-60 w-full text-white border-none cusor-pointer px-10 rounded-r-md ">Discover</button>
-        </form>
-    </div>
-    <div>
-        <img src="images/Images.png" alt="">
-    </div>
-</div>
-<!-- 3 -->
-<div class="max-w-7xl mx-auto mt-24">
-    <h1 class="text-[#0000000] font-bold text-center text-5xl">Our Popular Dishes</h1>
-    <p class="text-center mt-6 text-[#00000099]">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
-    <div class="mt-[48px] grid grid-cols-1 mx-auto gap-8 w-[400px] md:w-[1250px] md:grid md:grid-cols-3 md:gap-8" id="products">
-    </div>  
-</div>   
-<!-- 4 -->
-<div class="max-w-7xl mx-auto mt-24 flex justify-between items-center">
-    <h1 class="text-5xl font-bold">Categories</h1>
-    <div class="border  border-red-500 rounded-md w-[220px] h-[60px] flex justify-center items-center ">
-     <a class="text-[#F54748] text-lg " href="">View All Categories</a>
-    </div>
- </div>
-<!-- 5 -->
-<div class="max-w-7xl mx-auto mt-24 grid grid-cols-6 gap-8" >
-    <div>
-        <img src="images/10.png" alt="">
-        <p class="ml-4">Breakfast</p>
-    </div>
-    <div>
-        <img src="images/11.png" alt="">
-        <p class="ml-8">Vagan</p>
-    </div>
-    <div>
-        <img src="images/12.png" alt="">
-        <p class="ml-10">Meat</p>
-    </div>
-    <div>
-        <img src="images/13.png" alt="">
-        <p class="ml-6">Dessert</p>
-    </div>
-    <div>
-        <img src="images/14.png" alt="">
-        <p class="ml-8">Lunch</p>
-    </div>
-    <div>
-        <img src="images/15.png" alt="">
-        <p class="ml-8">Chocolate</p>
-    </div>
-</div>
-<!-- 6 -->
-<div class="max-w-7xl mx-auto mt-24 text-[#00000099]">
-    <h1 class="font-bold text-5xl text-center">Contact us</h1>
-    <form action="" class="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-4 mt-16">
-        <div>
-            <label class="uppercase text-[#00000099]" for="name">Name</label> <br>
-            <input id="name" class="border rounded-xl outline-none p-3 w-[620px] h-[60px] mt-4" type="text" placeholder="Enter your name...">
+      <!-- đầu -->
+    <header>
+        <div class="max-w-7xl mx-auto md:flex justify-between mt-5 font-bold mb-44 px-5">
+            <h1 class="text-[24px] ">Fudo.</h1>
+            <div class="md:space-x-8 space-x-3 flex text-[18px]">
+                <a href="" class="active">Home</a>
+                <a href="">Product</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="flex md:space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                  </svg>
+                <button class="text-red-400 border border-red-500 rounded-md px-4">Sign In</button>
+                <button class="text-white bg-red-500 rounded-md px-4">Sign Up</button>
+            </div>
         </div>
-        <div>
-            <label class="uppercase text-[#00000099]" for="name">emAIL aDDRESS</label> <br>
-            <input id="name" class="border rounded-xl outline-none p-3 w-[620px] h-[60px] mt-4" type="text" placeholder="Your email address...">
+    </header>
+    <!-- thân -->
+    <section>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-6 px-5">
+            <div class="order-2 md: order-1">
+                <h3 class="text-[18px] text-[#F54748] bg-[#FFEEEE] w-[180px] h-11 px-7 py-2 font-bold mb-5">Quality Food</h3>
+                <h1 class="font-bold w-[306px] md:w-[506px] text-[32px] md:text-[72px] md:leading-[100px] mb-5">Fastest <m class="text-red-500">Delivery</m> & Easy <m class="text-red-500">Pickup</m></h1>
+                <p class=" w-[306px] md:w-[620px] mb-5">Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
+                <form action="" class="w-[336px] md:w-[430px]  rounded-xl border border-red-400 flex justify-between">
+                    <input type="text" class="pl-5 w-full rounded-t-xl rounded-r rounded-b-xl outline-none" placeholder="Enter your delivery location" required>
+                    <button class="bg-red-400 py-6 px-8 rounded-xl rounded-l rounded-b-xl text-white">Discover</button>
+                </form>
+            </div>
+            <div class="md:order-1 order-2">
+                <img class="mb-32" src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743828/Images_doswz1.png" alt="">
+            </div>
         </div>
-        <div>
-            <label class="uppercase text-[#00000099]" for="name">Subject</label> <br>
-            <input id="name" class="border rounded-xl outline-none p-3 w-[620px] h-[60px] mt-4" type="text" placeholder="Enter subject...">
+    </section>
+    <section>
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="font-bold text-[48px] mb-5">Our Popular Dishes</h1>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
         </div>
-        <div>
-            <label class="uppercase text-[#00000099]" for="name">ENquiry type</label> <br>
-            <select name="" id="" class="border rounded-xl outline-none p-3 w-[620px] h-[60px] mt-4">
-                <option value="" class="text-[#00000099]" ><p class="text-[#00000099]">Advertising</p></option>
-            </select>
+    </section>
+    <section>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 mb-8 px-5">
+            <div>
+                <div>
+                    <img class="mb-5 rounded-2xl w-[398px]" src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743828/hamboger_cp3lpx.png" alt="">
+                </div>
+                <h1 class="text-[#F54748] font-bold mb-5">Big and Juicy Wagyu Beef Cheeseburger</h1>
+                <div class="flex space-x-6">
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654745890/Timer_nborbs.png" alt=""> 30 Minutes</span>
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743827/dia_wwggs0.png" alt=""> Snack
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="mb-5 rounded-2xl" src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743827/ca_njcnrk.png" alt="">
+                </div>
+                <h1 class="text-[#F54748] font-bold mb-5">Big and Juicy Wagyu Beef Cheeseburger</h1>
+                <div class="flex space-x-6">
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654745890/Timer_nborbs.png" alt=""> 30 Minutes</span>
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743827/dia_wwggs0.png" alt=""> Snack
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="mb-5 rounded-2xl" src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743828/ga_waai89.png" alt="">
+                </div>
+                <h1 class="text-[#F54748] font-bold mb-5">Big and Juicy Wagyu Beef Cheeseburger</h1>
+                <div class="flex space-x-6">
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654745890/Timer_nborbs.png" alt=""> 30 Minutes</span>
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743827/dia_wwggs0.png" alt=""> Snack
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="mb-5 rounded-2xl" src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743828/sup_mddsvf.png" alt="">
+                </div>
+                <h1 class="text-[#F54748] font-bold mb-5">Big and Juicy Wagyu Beef Cheeseburger</h1>
+                <div class="flex space-x-6">
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654745890/Timer_nborbs.png" alt=""> 30 Minutes</span>
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743827/dia_wwggs0.png" alt=""> Snack
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="mb-5 rounded-2xl" src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743828/mi_a34xej.png" alt="">
+                </div>
+                <h1 class="text-[#F54748] font-bold mb-5">Big and Juicy Wagyu Beef Cheeseburger</h1>
+                <div class="flex space-x-6">
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654745890/Timer_nborbs.png" alt=""> 30 Minutes</span>
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743827/dia_wwggs0.png" alt=""> Snack
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="mb-5 rounded-2xl" src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743826/7_gu8tdp.png" alt="">
+                </div>
+                <h1 class="text-[#F54748] font-bold mb-5">Big and Juicy Wagyu Beef Cheeseburger</h1>
+                <div class="flex space-x-6">
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654745890/Timer_nborbs.png" alt=""> 30 Minutes</span>
+                    <span class="flex">
+                        <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743827/dia_wwggs0.png" alt=""> Snack
+                    </span>
+                </div>
+            </div>
         </div>
-        <div>
-            <label class="uppercase text-[#00000099]" for="name">MEssages</label> <br>
-            <textarea class="border w-[610px] rounded-xl outline-none p-3 md:w-[1280px] h-[200px] mt-4" name="" id="" cols="170" rows="10">Enter your messages...</textarea>
+    </section>
+    <section class="mb-6">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="flex justify-between mb-6">
+                <h2 class="text-[48px] font-bold">Categories</h2>
+                <a class="text-red-400 border border-red-400 rounded-xl px-6 py-4" href="">View All Categories</a>
+            </div>
+            <div class=" grid grid-cols-1 md:grid-cols-6 font-bold">
+                <div>
+                    <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743826/10_ou1b9r.png" alt="">
+                    <p>Breakfast</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743826/11_rlajix.png" alt="">
+                    <p>Breakfast</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743826/12_cycr3b.png" alt="">
+                    <p>Breakfast</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743826/13_kx3tyb.png" alt="">
+                    <p>Breakfast</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743827/14_g7amn3.png" alt="">
+                    <p>Breakfast</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/fashsion-brand/image/upload/v1654743827/15_rouywn.png" alt="">
+                    <p>Breakfast</p>
+                </div>
+            </div>
         </div>
-    </form>
-</div>
-<!-- 7 -->
-<div class="max-w-7xl mx-auto mt-16 text-center">
-    <button class="bg-black text-white p-3 w-[180px] h-[64px] rounded-xl">Submit</button>
-</div>
-<!-- 8 -->
-<div class="flex max-w-7xl mx-auto mt-10 justify-between items-center">
-    <div>
-        <h1 class="flex font-bold text-2xl">Fudop <p class="text-[#F54748]">.</p> </h1>
-    </div>
-    <div class="text-lg ">
-        <a class="px-3" href="">Home</a>
-        <a class="px-3" href="">Products</a>
-        <a class="px-3" href="">About Us</a>
-        <a class="px-3" href="">Contact Us</a>
-    </div>
-</div>
-
-    <script type="module" src="js/main.js"></script>
+    </section>
+    <section class="max-w-7xl mx-auto mt-24 text-[#00000099] px-5">
+            <h1 class="font-bold text-5xl text-center">Contact us</h1>
+            <form action="" class="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-4 mt-16">
+                <div>
+                    <label class="uppercase text-[#00000099]" for="name">Name</label> <br>
+                    <input id="name" class="border rounded-xl outline-none p-3 w-[320px] md:w-[620px] h-[60px] mt-4" type="text" placeholder="Enter your name...">
+                </div>
+                <div>
+                    <label class="uppercase text-[#00000099]" for="name">emAIL aDDRESS</label> <br>
+                    <input id="name" class="border rounded-xl outline-none p-3  w-[320px] md:w-[620px] h-[60px] mt-4" type="text" placeholder="Your email address...">
+                </div>
+                <div>
+                    <label class="uppercase text-[#00000099]" for="name">Subject</label> <br>
+                    <input id="name" class="border rounded-xl outline-none p-3  w-[320px] md:w-[620px] h-[60px] mt-4" type="text" placeholder="Enter subject...">
+                </div>
+                <div>
+                    <label class="uppercase text-[#00000099]" for="name">ENquiry type</label> <br>
+                    <select name="" id="" class="border rounded-xl outline-none p-3  w-[320px] md:w-[620px] h-[60px] mt-4">
+                        <option value="" class="text-[#00000099]" ><p class="text-[#00000099]">Advertising</p></option>
+                    </select>
+                </div>
+                <div>
+                    <label class="uppercase text-[#00000099]" for="name">MEssages</label> <br>
+                    <textarea class="border  w-[320px] md:w-[620px] rounded-xl outline-none p-3 md:w-[1280px] h-[200px] mt-4" name="" id="" cols="170" rows="10">Enter your messages...</textarea>
+                </div>
+            </form>
+            <div class="max-w-7xl mx-auto mt-16 text-center">
+                <button class="bg-black text-white p-3 w-[180px] h-[64px] rounded-xl">Submit</button>
+            </div>
+    </section>
+    <footer>
+        <div class="flex max-w-7xl mx-auto mt-10 justify-between items-center">
+            <div>
+                <h1 class="flex font-bold text-2xl">Fudop <p class="text-[#F54748]">.</p> </h1>
+            </div>
+            <div class="text-lg ">
+                <a class="px-3" href="">Home</a>
+                <a class="px-3" href="">Products</a>
+                <a class="px-3" href="">About Us</a>
+                <a class="px-3" href="">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
