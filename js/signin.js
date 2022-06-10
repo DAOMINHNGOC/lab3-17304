@@ -1,51 +1,27 @@
-const productList = [
-    {
-        id: 1,
-        name: "Product A",
-        img: "https://picsum.photos/300/300",
-        time: 30,
-        type: "snack",
-    },
-    {
-        id: 2,
-        name: "Product B",
-        img: "https://picsum.photos/300/300",
-        time: 60,
-        type: "snack",
-    },
-    {
-        id: 3,
-        name: "Product C",
-        img: "https://picsum.photos/300/300",
-        time: 10,
-        type: "fish",
-    },
-];
+function signinacc() {
 
-function showProducts(products) {
-    if (!Array.isArray(products) || products.length == 0) return false;
+    var email = document.frmDoimatkhau.txtemail.value;
+    var mk = document.frmDoimatkhau.psmk.value;
+    var ok = true;
 
-    let result = "";
-    for (let i = 0; i < products.length; i++) {
-        const product = products[i];
-        result += `
-        <div>
-        <div class="product-img">
-            <a href="./detail.html?id=${product.id}">
-                <img src="${product.img}" alt="" />
-            </a>
-        </div>
-        <div class="product-content">
-            <h3><a href="./detail.html?id=${product.id}">${product.name}</a></h3>
-            <div class="flex">
-                <span>${product.time} times</span>
-                <span>${product.type}</span>
-            </div>
-        </div>
-    </div>
-        `;
+    if (email.length == 0) {
+        document.getElementById("loiemail").innerHTML = "Hãy điền thông tin email";
+        ok = false;
+    } else {
+        document.getElementById("loiemail").innerHTML = "";
     }
-    return result;
-}
 
-document.getElementById("products").innerHTML = showProducts(productList);
+    if (mk.length == 0) {
+        document.getElementById("loimk").innerHTML ="Hãy điền mật khẩu";
+        ok = false;
+    } else {
+        document.getElementById("loimk").innerHTML ="";
+} 
+
+    if (ok) {
+        alert("Đăng nhập thành công");
+        return true;
+    } else {
+        return false;
+    }
+}
