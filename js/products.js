@@ -56,14 +56,13 @@ function showProducts(products) {
                 <img src="${product.img}" alt="" />
             </a>
         </div>
-        <div class="product-content inline-block mt-3 w-full shadow transition leading-[38px] font-bold hover:shadow-xl h-40">
-            <h3><a class="text-[18px] font-semibold mt-10" href="./detail.html?id=${product.id}">${product.name}</a></h3>
+        <div class="product-content inline-block mt-3 w-full shadow transition leading-[38px] font-bold hover:shadow-xl h-40 px-2">
+            <h3 class="h-20"><a class="text-[18px] font-semibold " href="./detail.html?id=${product.id}">${product.name}</a></h3>
                <div>
-               <span class="font-bold text-[#F54748] mt-10" >$ ${product.time}</span>
-               </div>
-               <div class=""><a class="text-white bg-black w-[250px] px-[70px] md:px-[98px] text-[14px] py-3 rounded-md  " href="./detail.html?id=${product.id}">
+               <span class="font-bold text-[#F54748] " >$ ${product.time}</span>
+               <button class="text-white bg-black w-full rounded-sm " href="./detail.html?id=${product.id}">
                ${product.type}
-               </a>
+               </button>
                </div>
                 
             
